@@ -6,13 +6,15 @@
         # By Experience level
 
         # Based off of those parameters calculate salary
+        # Compare median salary with predicted salary.
 
-    # Exploratory Compenent 
+    # Exploratory Component 
         
         # page with graphs and data
         # Data will consist of imported data overview
         # Plot country data
         # Chart with mean salaries by country
+        
 
 
 """ 
@@ -31,7 +33,10 @@ Import libraries
 Add and Import data from
 
 Clean data:
-    Drop columns: employee_residence, remote ratio
+    No columns drop - keep Colums
+        In second refactor decide to drop or keep columns.
+        Drop columns: employee_residence, remote ratio
+
     
     Remove null values
         df = df[df["salary_in_usd"].notnull()]
