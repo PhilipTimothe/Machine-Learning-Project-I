@@ -4,6 +4,7 @@ import streamlit as st
 from ResultsUI import show_results_data
 
 
+# Load Model from pickle file
 def load_model():
     with open("Resources/salaries_pred_model.pkl", "rb") as file:
         model_data = pickle.load(file)
@@ -25,6 +26,7 @@ company_location = model_data["company_location"]
 company_size = model_data["company_size"]
 
 
+# Create a prediction page user interface
 def show_prediction_page():
     st.title("Data Science Salary Predictions")
 
@@ -65,6 +67,7 @@ def show_prediction_page():
     company_l = st.selectbox("Company Location", company_locations)
     company_s = st.selectbox("Company Size", company_sizes)
 
+    # Create a button that will show prediction results
     calculate = st.button("Caluculate Salary Prediction")
     if calculate == True:
         X = np.array(
@@ -86,10 +89,14 @@ def show_prediction_page():
 
         salary = regressor.predict(X)
         st.subheader(f"Predicted salary is ${salary[0]:.2f}")
-        show_results_data(
-            experience_l_map[experience_l],
-            job_t,
-            remote,
-            company_locations_map[company_l],
-            company_sizes_map[company_s],
-        )
+
+        # Show more analytical data suppporting prediction results
+        # show_results_data(
+        #     experience_l_map[experience_l],
+        #     job_t,
+        #     remote,
+        #     company_locations_map[company_l],
+        #     company_sizes_map[company_s],
+        # )
+
+        # Above code implementation works but may not be in scope of application. Revisiting at a later time.

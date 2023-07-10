@@ -101,6 +101,7 @@ def show_exploration_page():
     )
 
     # analyzed_regressor data set
+    st.write("""##### Multi Regressor Error Analysis""")
     st.dataframe(analyzed_regressors)
 
     # Plot Job Title Data
@@ -169,4 +170,9 @@ def show_exploration_page():
         also to gain insights in the feature's behavior.
         """,
         language="python",
+    )
+
+    st.divider()
+    st.caption(
+        "Here and below is where future interations of new implentations features will live! :sunglasses:"
     )

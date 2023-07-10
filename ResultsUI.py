@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
 
+# Clean data method
 def clean_categories(categories, cutoff):
     category_map = {}
     for i in range(len(categories)):
@@ -54,6 +53,7 @@ def load_data():
 salary_df = load_data()
 
 
+# Show data results method for UI
 def show_results_data(
     experience_level, job_title, remote_ratio, company_location, company_size
 ):
