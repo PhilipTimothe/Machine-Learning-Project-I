@@ -1,6 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
+from ResultsUI import show_results_data
 
 
 def load_model():
@@ -11,7 +12,13 @@ def load_model():
 
 model_data = load_model()
 
+X_train = model_data["X_train"]
+X_test = model_data["X_test"]
+y_train = model_data["y_train"]
+y_test = model_data["y_test"]
 regressor = model_data["model"]
+training_predictions = model_data["training_predictions"]
+testing_predictions = model_data["testing_predictions"]
 experience_level = model_data["experience_level"]
 job_title = model_data["job_title"]
 company_location = model_data["company_location"]
@@ -79,3 +86,10 @@ def show_prediction_page():
 
         salary = regressor.predict(X)
         st.subheader(f"Predicted salary is ${salary[0]:.2f}")
+        show_results_data(
+            experience_l_map[experience_l],
+            job_t,
+            remote,
+            company_locations_map[company_l],
+            company_sizes_map[company_s],
+        )

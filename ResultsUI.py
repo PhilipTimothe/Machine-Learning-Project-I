@@ -53,5 +53,15 @@ def load_data():
 
 salary_df = load_data()
 
-def show_results_data(experience_level, job_title, remote_status, company_location, company_size):
-    
+
+def show_results_data(
+    experience_level, job_title, remote_ratio, company_location, company_size
+):
+    df = salary_df.loc[
+        (salary_df["experience_level"] == experience_level)
+        & (salary_df["job_title"] == job_title)
+        & (salary_df["remote_ratio"] == remote_ratio)
+        & (salary_df["company_location"] == company_location)
+        & (salary_df["company_size"] == company_size)
+    ]
+    st.dataframe(df)
