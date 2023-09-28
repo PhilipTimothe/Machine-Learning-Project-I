@@ -17,6 +17,8 @@
 
 This project focuses on developing a machine learning model for predicting salaries. The objective is to develop a machine learning model that estimates salaries based on various key features. For data cleaning, features were evaluated for importance and predictive value. Supervised learning and neural network models were developed and tested to deliver reliable predictions.
 
+Link to [Live Demo](https://machine-learning-project-i-ewi57ecwky.streamlit.app/)
+
 <a href="" target="_blank" rel="noreferrer"><img src="Images/StreamLit UI.png" width="" height="400" alt="StreamLit UI" /></a>
 <a href="" target="_blank" rel="noreferrer"><img src="Images/Explore UI.png" width="" height="400" alt="StreamLit UI" /></a>
 
