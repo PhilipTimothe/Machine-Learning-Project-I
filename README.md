@@ -80,12 +80,40 @@ We used this metric to assess the relationship between each individual feature a
 
 ## Business Insights for Stakeholders
 
+1. **Competitive Salary Benchmarking**:
+
+   - Companies can use this data to adjust their salary structures to remain competitive in hiring top talent.
+   - Job seekers can leverage this information to negotiate better salaries based on industry trends.
+   - Understanding pay gaps between experience levels helps HR teams optimize compensation strategies for career progression.
+
+2. **Workforce Planning and Hiring Strategies**
+
+   - Higher salaries in leadership roles suggest companies must focus on internal growth and retention of skilled employees to avoid costly hiring.
+   - Salaries vary across company sizes, indicating smaller firms may need to offer other benefits like equity, bonuses, or flexible work arrangements to attract talent.
+   - Remote work salary trends highlight opportunities for businesses to expand their talent pool by offering remote positions with competitive pay.
+
+3. **Global Market Positioning**
+
+   - Companies expanding into high-paying markets (e.g., U.S. and Canada) should account for increased compensation costs while leveraging regional salary expectations.
+   - Understanding salary disparities by location enables companies to decide where to establish remote work hubs or expand operations cost-effectively.
+
+4. **Data-Driven Decision Making in Talent Acquisition**
+
+   - HR departments can use salary insights to reduce turnover rates by offering market-aligned compensation.
+   - Hiring managers can focus on job titles that yield the highest ROI in terms of salary vs. business impact.
+   - The correlation between experience level and pay ensures that organizations recruit candidates who align with their salary budgets and long-term growth strategies.
+
+5. **Strategic Budget Allocation**
+
+   - Companies can forecast salary growth trends and allocate budgets efficiently based on market dynamics.
+   - Investment in higher-paid roles such as ML Engineers or Data Scientists may drive business innovation and competitive advantage.
+
 ## Conclusion & Next Steps
 
 - Salary trends suggest that seniority, remote work, and company size play significant roles in compensation.
 - Future work could involve:
-  - Expanding the dataset with real-time salary updates.
-  - Developing an interactive dashboard for users to explore salary predictions.
+- Expanding the dataset with real-time salary updates.
+- Developing an interactive dashboard for users to explore salary predictions.
 
 ## Contributors
 
